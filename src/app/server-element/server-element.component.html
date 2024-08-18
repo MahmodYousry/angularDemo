@@ -1,0 +1,11 @@
+<div class="card mb-3">
+  <div class="card-header">{{ element.name }}</div>
+  <div class="card-body">
+    <p class="text-danger" *ngIf="element.type === 'server'">
+      <strong>{{ element.content }}</strong>
+    </p>
+    <p class="text-info" *ngIf="element.type === 'Blueprint'">
+      <em>{{ element.content }}</em>
+    </p>
+  </div>
+</div>
